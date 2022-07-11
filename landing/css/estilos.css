@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Sansita:wght@800&display=swap');
+
+
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+/*todo lo que este en body, a menos que se diga lo contrario va a ser con esa font family. Si pones el nombre de la de google va a aparecer esa. Lo mismo va a pasar con las otras tipos, si ek h1 es diferente al body lo aclaramos. */
+
+
+/*body va a ser la montserrat regular, o sea, miFuente*/
+
+
+body {
+    /*esto va ser mi background general, va a llegar hasta donde termina el body*/
+    background-image: url(../imagenes/pattern.png),linear-gradient(#1F0734, #68388D);
+    height: 100vh;
+    /*background-image: url(../imagenes/pattern.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+    font-family: 'miFuente';
+    font-weight: 400;
+    color: rgb(255, 253, 247)
+}
+
+div {
+    width: 33.3%;
+    margin: 0%, auto;
+    margin-left: 8.33%;
+}
+.responsive {
+    width: 70%;
+    height: auto;
+}
+
+#nombre {
+    display: block;
+    max-width: fit-content;
+    margin-left: 8.33%;
+    margin-top: 4.3%;
+
+}
+
+
+
+/*h1 va a ser el título, sansita extra bold. Solo tiene UNA variable (por eso no aclaramos minimo o máximo en el import de google fonts*/
+h1 {
+    font-family: 'sansita', sans-serif;
+}
+
+/*a van a ser los botones. lo que este adentro del id en el html lo va a reconocer aca*/
+a {
+    text-decoration: none;
+    font-family: 'cutive', serif;
+    font-size: 1em;
+    color: rgba(255, 64, 119, 1);
+    padding: .5em;
+}
+
+
+a:hover {
+    color: rgba(255, 64, 119, 1);
+    background-color: rgba(255, 253, 247, 1);
+
+}
+
+/*esto va a permitir que se adapte la tipografía a la pantalla*/
+@media (max-width: 768px) {
+    body {
+        font-size: 50%;
+    }
+
+}
+
+ul {
+    list-style-type: none;
+    padding: .5em;
+    margin-left: 8.33%;
+}
+li {
+    padding: .5em;
+}
